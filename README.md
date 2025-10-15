@@ -15,7 +15,34 @@ To clean, structure, and consolidate the required information, I wrote several S
 - Aggregation and data formatting
 - CTEs (Common Table Expressions) for modular and readable queries.
 
+SQL Code Snippets
 
+'with u_tab as (
+	select * 
+    from sales_2024
+    union
+    select *
+    from sales_2023
+),
+    tab_date as ( 
+	select 
+    u_tab.client_name,
+	u_tab.sales_date,
+	u_tab.goods,
+	u_tab.producer,
+	u_tab.manager,
+	u_tab.payment_type,
+	u_tab.purveyor,
+	u_tab.qtity,
+	u_tab.netto_price,
+	u_tab.sales_price,
+    u_tab.profit,
+	goods.goods_group,
+    goods.goods_subgroup 
+from u_tab
+left join goods
+on u_tab.goods=goods.goods_name
+), '
   
 
 ## Step 3. Downloading the tables
