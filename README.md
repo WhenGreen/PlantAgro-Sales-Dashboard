@@ -15,9 +15,9 @@ To clean, structure, and consolidate the required information, I wrote several S
 - Aggregation and data formatting
 - CTEs (Common Table Expressions) for modular and readable queries.
 
-SQL Code Snippets
+### *SQL Code Snippets*
 
-'''sql 
+''' sql 
 with u_tab as (
 	select * 
     from sales_2024
@@ -43,7 +43,7 @@ with u_tab as (
 from u_tab
 left join goods
 on u_tab.goods=goods.goods_name
-), '''
+),  '''
   
 
 ## Step 3. Downloading the tables
