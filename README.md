@@ -21,7 +21,7 @@ To clean, structure, and consolidate the required information, I wrote several S
 ## Step 3. Downloading the tables
 After preparing and validating the final tables, I exported them to CSV format and imported the files into Tableau Public for visualization.
 
-
+![Image](https://github.com/user-attachments/assets/5ce93960-9276-462f-bee0-de64276322e8)
 
 
 ## Step 4. Creating the dashboards
