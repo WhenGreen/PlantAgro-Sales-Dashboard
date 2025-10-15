@@ -17,7 +17,7 @@ To clean, structure, and consolidate the required information, I wrote several S
 
 SQL Code Snippets
 
-'with u_tab as (
+sql <br> with u_tab as (
 	select * 
     from sales_2024
     union
@@ -42,7 +42,7 @@ SQL Code Snippets
 from u_tab
 left join goods
 on u_tab.goods=goods.goods_name
-), '
+), <br>
   
 
 ## Step 3. Downloading the tables
