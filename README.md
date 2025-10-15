@@ -3,7 +3,7 @@
 This repository documents the process of developing my personal project using SQL and Tableau Public.
 The main goal of the project is to demonstrate my analytical, data preparation, and visualization skills through practical examples and interactive dashboards.
 
-![Dashboard.pdf](https://github.com/user-attachments/files/22901990/Dashboard.pdf)0
+![Dashboard.pdf](https://github.com/user-attachments/files/22901990/Dashboard.pdf)
 
 ## Step 1. Setting Up and Cleaning Data
 I started by downloading raw company data into a PostgreSQL database.
