@@ -43,8 +43,8 @@ with u_tab as (
 from u_tab
 left join goods
 on u_tab.goods=goods.goods_name
-),  ```
-  
+),  
+```   
 
 ## Step 3. Downloading the tables
 After preparing and validating the final tables, I exported them to CSV format and imported the files into Tableau Public for visualization.
