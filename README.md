@@ -17,6 +17,28 @@ To clean, structure, and consolidate the required information, I wrote several S
 ### *SQL Code Snippets*
 
 ```sql
+select *
+from goods
+limit 10;
+
+select *
+from payments_2024
+limit 10;
+
+select *
+from sales_plan_2024
+limit 10;
+
+select *
+from sales_2024
+limit 10;
+
+select *
+from sales_2023
+limit 10;
+```
+
+```sql
 with u_tab as (
 	select * 
     from sales_2024
