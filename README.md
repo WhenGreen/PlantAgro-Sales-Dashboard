@@ -46,6 +46,52 @@ on u_tab.goods=goods.goods_name
 ),  
 ```   
 
+```sql
+ s_tab as (	
+       select 
+	   client_name,
+	   to_timestamp(sales_date, 'DD.MM.YYYY HH24:MI:SS')::date 
+	             as date_of_sales,
+    	goods,
+	    producer,
+	    manager,
+     	payment_type,
+    	purveyor,
+	    qtity,
+	    netto_price,
+        sales_price,
+        profit,
+	    goods_group,
+        goods_subgroup 
+ from tab_date
+``` 
+
+```sql
+select
+	client_name,
+	date_of_sales,
+	goods,
+	producer,
+	manager,
+	payment_type,
+	purveyor,
+	qtity,
+	netto_price,
+    sales_price,
+    profit,
+	goods_group,
+    goods_subgroup,
+	 case when date_of_sales < DATE '2023-11-01'
+	      then 2023 else 2024
+	 end as season,
+	to_char(date_of_sales, 'Mon') AS sales_month,
+    
+    -- Month number starting November as 1
+    ((EXTRACT(MONTH FROM date_of_sales)::int + 2 - 1) % 12) + 1 AS season_month_num
+    
+	from s_tab;
+``` 
+
 ## Step 3. Downloading the tables
 After preparing and validating the final tables, I exported them to CSV format and imported the files into Tableau Public for visualization.
 
