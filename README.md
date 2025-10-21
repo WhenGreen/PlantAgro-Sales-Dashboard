@@ -4,6 +4,9 @@ This repository documents the process of developing my personal project using SQ
 The main goal of the project is to demonstrate my analytical, data preparation, and visualization skills through practical examples and interactive dashboards.
 
 ![Dashboard.pdf](https://github.com/user-attachments/files/22901990/Dashboard.pdf)
+
+Full version of this report you can find <a href="https://github.com/WhenGreen/PlantAgro-Sales-Dashboard">here<a>.
+
 ## Step 1. Setting Up and Cleaning Data
 I started by downloading raw company data into a PostgreSQL database.
 After that, I created the main fields and uploaded all relevant company information for further analysis.
