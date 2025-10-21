@@ -5,7 +5,7 @@ The main goal of the project is to demonstrate my analytical, data preparation, 
 
 ![Dashboard.pdf](https://github.com/user-attachments/files/22901990/Dashboard.pdf)
 
-Full version of this report you can find <a href="https://public.tableau.com/app/profile/maria.vengrin/viz/Companyprjct/Dashboard?publish=yes">here</a>.
+Full version of this report you can find <a href="https://public.tableau.com/app/profile/maria.vengrin/viz/PlantAgroSalesDashboard/Dashboard">here</a>.
 
 ## Step 1. Setting Up and Cleaning Data
 I started by downloading raw company data into a PostgreSQL database.
